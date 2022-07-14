@@ -4,18 +4,33 @@
   flex
   items-center
   mx-auto
+  flex-col
+  gap-4
+  md:flex-row
+  md:gap-0
 }
 
 .brand-name {
   @apply
-  text-xl
+  text-3xl
   font-bold
   uppercase
   text-center
   mx-auto
-  sm:text-3xl
+  order-first
+  md:order-none
 }
 
 .menu-icon {
-  @apply mx-2
+  @apply
+  mx-2
+}
+
+.nav-item {
+  @apply
+  font-bold
+  text-sm
+  leading-5
+  uppercase
+  md:mr-8
 }
