@@ -1,0 +1,21 @@
+.header {
+  @apply
+  py-5
+  flex
+  items-center
+  mx-auto
+}
+
+.brand-name {
+  @apply
+  text-xl
+  font-bold
+  uppercase
+  text-center
+  mx-auto
+  sm:text-3xl
+}
+
+.menu-icon {
+  @apply mx-2
+}
