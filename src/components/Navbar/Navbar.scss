@@ -26,11 +26,19 @@
   mx-2
 }
 
-.nav-item {
+.nav-link {
   @apply
   font-bold
   text-sm
   leading-5
   uppercase
   md:mr-8
+  hover:opacity-70
+  transition-opacity
+}
+
+.cart-icon-link {
+  @apply
+  hover:opacity-70
+  transition-opacity
 }

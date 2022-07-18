@@ -1,0 +1,14 @@
+.cart-quantity {
+  @apply
+  absolute
+  top-0
+  right-0
+  text-white
+  text-[10px]
+  font-bold
+  bg-[url('../../assets/img/badge-items.svg')]
+  w-[22px]
+  h-[22px]
+  text-center
+  pt-[3px]
+}
