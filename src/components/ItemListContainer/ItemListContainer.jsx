@@ -1,12 +1,11 @@
 import './ItemListContainer.scss';
+import ItemList from "../ItemList/ItemList.jsx";
+
 
 function ItemListContainer(props) {
     return (
-        <div className="product-item">
-            <input className="product-qty" type="number" defaultValue={props.quantity}/>
-            <p>
-                {props.greeting}
-            </p>
+        <div className="products-container">
+            <ItemList onAdd={props.onAdd}/>
         </div>
     );
 }

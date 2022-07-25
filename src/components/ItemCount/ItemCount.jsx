@@ -14,10 +14,7 @@ function ItemCount({stock, initial, onAdd}) {
     };
 
     return (
-        <div className="product-card">
-            <div className="h-10">
-                <p>Product Name</p>
-            </div>
+        <div className="text-center">
             <div>
                 <div className="counter-container">
                     <button disabled={count <= 1} onClick={subItem} className="counter-button">-</button>

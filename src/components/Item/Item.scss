@@ -1,0 +1,26 @@
+.product-card {
+  @apply
+  w-[220px]
+  h-[350px]
+  bg-gray-50
+  m-4
+  text-center
+  rounded p-4
+}
+
+.product-card-info {
+  @apply
+  my-3
+}
+
+.product-card-name {
+  @apply
+  font-semibold
+  text-gray-900
+}
+
+.product-card-price {
+  @apply
+  font-medium
+  text-gray-900
+}

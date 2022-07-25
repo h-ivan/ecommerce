@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "White Cotton T-Shirt",
+    "brand": "Jack & James",
+    "price": 39.90,
+    "stock": 10,
+    "category": "Spring Essentials",
+    "imageUrl": "./src/assets/img/products/white-cotton-t-shirt.png"
+  },
+  {
+    "id": 2,
+    "name": "Light Blue T-Shirt",
+    "brand": "Jack & James",
+    "price": 79.90,
+    "stock": 5,
+    "category": "Spring Essentials",
+    "imageUrl": "./src/assets/img/products/light-blue-t-shirt.png"
+  },
+  {
+    "id": 3,
+    "name": "Green T-Shirt",
+    "brand": "Jack & James",
+    "price": 59.90,
+    "stock": 3,
+    "category": "Spring Essentials",
+    "imageUrl": "./src/assets/img/products/green-t-shirt.png"
+  }
+]
