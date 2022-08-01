@@ -2,6 +2,7 @@ import './Navbar.scss';
 
 import {ReactComponent as LoginIcon} from '../../assets/img/login-icon.svg';
 import CartWidget from "../CartWidget/CartWidget.jsx";
+import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
@@ -12,9 +13,11 @@ function Navbar() {
             <a href="#" className="nav-link">
                 trending collections
             </a>
-            <h1 className="brand-name">
-                black & white
-            </h1>
+            <Link className="brand-name" to={'/'}>
+                <h1 >
+                    black & white
+                </h1>
+            </Link>
             <a href="#" className="nav-link">
                 spring essentials
             </a>
