@@ -6,6 +6,7 @@
     "price": 39.90,
     "stock": 10,
     "category": "spring",
+    "description": "This contoured, classic cut T-shirt has that flattering style that's sure to turn some heads. It's great for layering under a sweater or sweatshirt and even better by itself with a pair of jeans. It's a good idea to own this one in a few different colors; it's definitely a go-to item.",
     "imageUrl": "./src/assets/img/products/white-cotton-t-shirt.png"
   },
   {
@@ -15,6 +16,7 @@
     "price": 79.90,
     "stock": 5,
     "category": "spring",
+    "description": "This premium T-shirt is as close to perfect as can be. Soft, comfortable and durable, this is a definite must-own.",
     "imageUrl": "./src/assets/img/products/light-blue-t-shirt.png"
   },
   {
@@ -23,7 +25,8 @@
     "brand": "Jack & James",
     "price": 59.90,
     "stock": 3,
-    "category": "spring",
+    "category": "summer",
+    "description": "This T-Shirt is as perfect as perfect gets: it's soft yet stretchy, a little longer than a standard tee and figure-flattering. 100% cotton Double-stitched ribbed collar and hems.",
     "imageUrl": "./src/assets/img/products/green-t-shirt.png"
   },
   {
@@ -33,6 +36,7 @@
     "price": 38.90,
     "stock": 2,
     "category": "trending",
+    "description": "Boxy-style, long-sleeved jumper in a rib knit containing some wool. Polo neck with large metal and imitation pearl buttons, and ribbing at the cuffs and hem. The polyester content of the jumper is recycled.",
     "imageUrl": "./src/assets/img/products/ribbed-polo-neck-jumper.png"
   },
   {
@@ -42,6 +46,17 @@
     "price": 79.90,
     "stock": 6,
     "category": "trending",
+    "description": "Straight cut shirt jacket in sturdy, washed denim. Features a pointed collar and buttons down the front. Dropped shoulders and long sleeves with button cuffs. Detachable tie belt at the waist and a rounded hem.",
     "imageUrl": "./src/assets/img/products/oversized-shirt-jacket.png"
+  },
+  {
+    "id": 6,
+    "name": "Leather Jacket",
+    "brand": "Jack & James",
+    "price": 279.90,
+    "stock": 2,
+    "category": "trending",
+    "description": "Sleek in silhouette with a a double-ended zip, the allie leather jacket is a modern riff on a wardrobe hero. It s designed using a butter-soft leather and is fully lined for comfort, but will lend any off-duty look a tough-luxe edge. Collarless neckline. Zip pocket to each hip. Slim fitting.",
+    "imageUrl": "./src/assets/img/products/leather-jacket.png"
   }
 ]

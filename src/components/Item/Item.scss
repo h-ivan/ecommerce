@@ -19,8 +19,14 @@
   text-gray-900
 }
 
+.product-card-description {
+  @apply
+  text-gray-900
+}
+
 .product-card-price {
   @apply
   font-medium
   text-gray-900
+  mb-4
 }

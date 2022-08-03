@@ -15,6 +15,7 @@ function ItemDetail(props) {
             <div className="product-card-info">
                 <div className="product-card-name">{props.item.name}</div>
                 <div className="product-card-price">${parseInt(props.item.price).toFixed(2)}</div>
+                <div className="product-card-description">{props.item.description}</div>
             </div>
             <ItemCount stock={props.item.stock} initial={1} onAdd={onAdd}/>
         </div>
