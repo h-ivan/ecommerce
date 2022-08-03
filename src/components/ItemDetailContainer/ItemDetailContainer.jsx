@@ -11,7 +11,7 @@ function ItemDetailContainer() {
         fetch('../mock/db.json')
             .then((response) => response.json())
             .then((data) => {
-                setItem(data.filter(item => item.id === parseInt(productId))[0]);
+                setItem(data.find(item => item.id === parseInt(productId)));
             }
         );
     }

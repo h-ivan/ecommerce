@@ -4,6 +4,6 @@ export function getItems() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(db);
-        }, 2000);
+        }, 500);
     });
 }

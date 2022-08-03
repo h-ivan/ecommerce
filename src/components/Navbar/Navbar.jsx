@@ -7,23 +7,20 @@ import {Link} from "react-router-dom";
 function Navbar() {
     return (
         <header className="header container">
-            <a href="#" className="nav-link">
-                new products
-            </a>
-            <a href="#" className="nav-link">
+            <Link className="nav-link" to={'/category/spring'}>
+                spring essentials
+            </Link>
+            <Link className="nav-link" to={'/category/trending'}>
                 trending collections
-            </a>
+            </Link>
             <Link className="brand-name" to={'/'}>
-                <h1 >
+                <h1>
                     black & white
                 </h1>
             </Link>
-            <a href="#" className="nav-link">
-                spring essentials
-            </a>
-            <a href="#" className="nav-link">
-                summer sale
-            </a>
+            <Link className="nav-link" to={'/products'}>
+                all products
+            </Link>
             <div className="flex items-center">
                 <a href="#" className="cart-icon-link">
                     <LoginIcon className="menu-icon"/>

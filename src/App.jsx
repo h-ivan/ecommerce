@@ -9,7 +9,7 @@ function App() {
         <div className="app">
             <Navbar/>
             <Routes>
-                <Route path="/" element={<ItemListContainer/>}/>
+                <Route path="/products" element={<ItemListContainer/>}/>
                 <Route path="/item/:id" element={<ItemDetailContainer/>}/>
                 <Route path="/category/:category" element={<ItemListContainer/>}/>
                 <Route path="*" element={<ItemListContainer/>}/>

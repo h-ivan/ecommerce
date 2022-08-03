@@ -5,7 +5,7 @@
     "brand": "Jack & James",
     "price": 39.90,
     "stock": 10,
-    "category": "Spring Essentials",
+    "category": "spring",
     "imageUrl": "./src/assets/img/products/white-cotton-t-shirt.png"
   },
   {
@@ -14,7 +14,7 @@
     "brand": "Jack & James",
     "price": 79.90,
     "stock": 5,
-    "category": "Spring Essentials",
+    "category": "spring",
     "imageUrl": "./src/assets/img/products/light-blue-t-shirt.png"
   },
   {
@@ -23,7 +23,25 @@
     "brand": "Jack & James",
     "price": 59.90,
     "stock": 3,
-    "category": "Spring Essentials",
+    "category": "spring",
     "imageUrl": "./src/assets/img/products/green-t-shirt.png"
+  },
+  {
+    "id": 4,
+    "name": "Ribbed polo-Neck Jumper",
+    "brand": "Jack & James",
+    "price": 38.90,
+    "stock": 2,
+    "category": "trending",
+    "imageUrl": "./src/assets/img/products/ribbed-polo-neck-jumper.png"
+  },
+  {
+    "id": 5,
+    "name": "Oversized Shirt Jacket",
+    "brand": "Jack & James",
+    "price": 79.90,
+    "stock": 6,
+    "category": "trending",
+    "imageUrl": "./src/assets/img/products/oversized-shirt-jacket.png"
   }
 ]
