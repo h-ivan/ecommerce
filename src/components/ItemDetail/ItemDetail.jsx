@@ -1,18 +1,22 @@
 import ItemCount from "../ItemCount/ItemCount.jsx";
 import './ItemDetail.scss';
 import {useState} from "react";
-import {NavLink, useNavigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {useCart} from "../../context/CartContext.jsx";
 
 function ItemDetail(props) {
 
     const [cartItems, setCartItems]  = useState(0);
-    const navigate = useNavigate();
+    const {addToCart} = useCart()
 
     function onAdd(qty) {
-        console.log(`${qty} item(s) added`);
         setCartItems(qty);
-        //COMENTAR LA SIGUIENTE LINEA PARA USAR EL LINK DE CHECKOUT EN LUGAR DEL NAVIGATE
-        navigate('/cart');
+        addToCart({
+            id: props.item.id,
+            qty: qty,
+            name: props.item.name,
+            price: props.item.price,
+        });
     }
 
     return (

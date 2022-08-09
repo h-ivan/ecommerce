@@ -2,9 +2,12 @@ import './Navbar.scss';
 
 import {ReactComponent as LoginIcon} from '../../assets/img/login-icon.svg';
 import CartWidget from "../CartWidget/CartWidget.jsx";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {useCart} from "../../context/CartContext.jsx";
 
 function Navbar() {
+    const {cart} = useCart()
+    console.log(cart);
     return (
         <header className="header container">
             <NavLink className={({isActive}) =>

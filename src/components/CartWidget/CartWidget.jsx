@@ -1,13 +1,16 @@
 import {ReactComponent as CartIcon} from '../../assets/img/cart-icon.svg';
 import './CartWidget.scss';
+import {useCart} from "../../context/CartContext.jsx";
+import {NavLink} from "react-router-dom";
 
 function CartWidget() {
+    const {getTotalItems} = useCart();
     return (
         <div className="relative">
-            <a href="#" className="cart-icon-link">
+            <NavLink className="cart-icon-link" to={'/cart'}>
                 <CartIcon className="menu-icon"/>
-                <div className="cart-quantity">1</div>
-            </a>
+                <div className="cart-quantity">{getTotalItems()}</div>
+            </NavLink>
         </div>
     );
 }
