@@ -19,7 +19,7 @@ export const CartProvider = (props) => {
     };
 
     const removeFromCart = (item) => {
-        setCart(cart.filter((i) => i.id !== item.id));
+        setCart(cart.filter((i) => i.id !== item));
     }
 
     const emptyCart = () => {

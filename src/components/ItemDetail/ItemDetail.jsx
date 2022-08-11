@@ -16,6 +16,7 @@ function ItemDetail(props) {
             qty: qty,
             name: props.item.name,
             price: props.item.price,
+            img: props.item.imageUrl
         });
     }
 

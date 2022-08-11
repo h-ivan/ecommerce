@@ -9,7 +9,7 @@ function CartWidget() {
         <div className="relative">
             <NavLink className="cart-icon-link" to={'/cart'}>
                 <CartIcon className="menu-icon"/>
-                <div className="cart-quantity">{getTotalItems()}</div>
+                {getTotalItems() > 0 && <div className="cart-quantity">{getTotalItems()}</div>}
             </NavLink>
         </div>
     );

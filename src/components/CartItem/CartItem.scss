@@ -1,0 +1,23 @@
+
+.checkout-card {
+  @apply
+  max-w-2xl
+  border
+  w-full
+  mb-4
+  mx-auto
+  flex
+  gap-4
+  relative
+}
+
+.checkout-card-remove {
+  @apply
+  scale-125
+  absolute
+  right-0
+  top-0
+  m-2
+  cursor-pointer
+  hover:opacity-75
+}
