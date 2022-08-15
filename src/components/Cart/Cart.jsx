@@ -1,6 +1,7 @@
 import {useCart} from "../../context/CartContext.jsx";
 import CartItem from "../CartItem/CartItem.jsx";
 import {NavLink} from "react-router-dom";
+import CartTotal from "../CartTotal/CartTotal.jsx";
 
 function Cart() {
     const {cart} = useCart();
@@ -21,7 +22,7 @@ function Cart() {
                     }
                 )
             }
-
+            {cart.length > 0 && <CartTotal/>}
         </div>
     );
 }
