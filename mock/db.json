@@ -34,7 +34,7 @@
     "name": "Ribbed polo-Neck Jumper",
     "brand": "Jack & James",
     "price": 38.90,
-    "stock": 2,
+    "stock": 4,
     "category": "trending",
     "description": "Boxy-style, long-sleeved jumper in a rib knit containing some wool. Polo neck with large metal and imitation pearl buttons, and ribbing at the cuffs and hem. The polyester content of the jumper is recycled.",
     "imageUrl": "./src/assets/img/products/ribbed-polo-neck-jumper.png"
@@ -54,7 +54,7 @@
     "name": "Leather Jacket",
     "brand": "Jack & James",
     "price": 279.90,
-    "stock": 2,
+    "stock": 8,
     "category": "trending",
     "description": "Sleek in silhouette with a a double-ended zip, the allie leather jacket is a modern riff on a wardrobe hero. It s designed using a butter-soft leather and is fully lined for comfort, but will lend any off-duty look a tough-luxe edge. Collarless neckline. Zip pocket to each hip. Slim fitting.",
     "imageUrl": "./src/assets/img/products/leather-jacket.png"

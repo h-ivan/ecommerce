@@ -6,8 +6,8 @@ import {Routes, Route} from "react-router-dom";
 import Cart from "./components/Cart/Cart.jsx";
 import {CartProvider} from "./context/CartContext.jsx";
 
-
 function App() {
+
     return (
         <div className="app">
             <CartProvider>

@@ -3,6 +3,7 @@ import './ItemDetail.scss';
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
 import {useCart} from "../../context/CartContext.jsx";
+import loadingImg from '../../assets/img/loading.gif';
 
 function ItemDetail(props) {
 
@@ -21,15 +22,18 @@ function ItemDetail(props) {
     }
 
     return (
+
         <div className="product-card-detail">
-            <div className="flex justify-center">
-                <img src={`../${props.item.imageUrl}`} alt={props.item.name}/>
-            </div>
-            <div className="product-card-info">
-                <div className="product-card-name">{props.item.name}</div>
-                <div className="product-card-price">${parseInt(props.item.price).toFixed(2)}</div>
-                <div className="product-card-description">{props.item.description}</div>
-            </div>
+            {props.loading ? <img className="mx-auto" width="32" height="32" src={loadingImg} alt="loading"/> :<div>
+                <div className="flex justify-center">
+                    <img src={`../${props.item.imageUrl}`} alt={props.item.name}/>
+                </div>
+                <div className="product-card-info">
+                    <div className="product-card-name">{props.item.name}</div>
+                    <div className="product-card-price">${parseInt(props.item.price).toFixed(2)}</div>
+                    <div className="product-card-description">{props.item.description}</div>
+                </div>
+            </div>}
             {cartItems === 0 ?
                 <ItemCount stock={props.item.stock} initial={1} onAdd={onAdd}/>
             :
