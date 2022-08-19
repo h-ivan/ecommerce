@@ -1,0 +1,21 @@
+
+.order-button {
+  @apply
+  bg-gray-100
+  mt-8
+  py-2
+  px-3
+  border
+  hover:bg-gray-50
+  block
+  mx-auto
+  disabled:opacity-50
+  disabled:bg-gray-50
+}
+
+.form-input {
+  @apply
+  border
+  w-full
+  mb-4
+}

@@ -2,11 +2,14 @@ import {useCart} from "../../context/CartContext.jsx";
 import CartItem from "../CartItem/CartItem.jsx";
 import {NavLink} from "react-router-dom";
 import CartTotal from "../CartTotal/CartTotal.jsx";
+import './Cart.scss';
+import CartForm from "../CartForm/CartForm.jsx";
 
 function Cart() {
-    const {cart} = useCart();
+    const {cart, emptyCart} = useCart();
     return (
-        <div className="mt-4 container mx-auto">
+        <div className="mt-8 container mx-auto px-4">
+            {cart.length > 0 && <div onClick={emptyCart} className="empty-cart">Empty Cart</div>}
             {cart.length === 0 ?
                 <div className="text-center">
                     <span className="block text-xl mb-4">
@@ -22,7 +25,12 @@ function Cart() {
                     }
                 )
             }
-            {cart.length > 0 && <CartTotal/>}
+            {cart.length > 0 &&
+                <>
+                    <CartTotal/>
+                    <CartForm/>
+                </>
+            }
         </div>
     );
 }
