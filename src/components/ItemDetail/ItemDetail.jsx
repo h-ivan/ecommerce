@@ -26,7 +26,7 @@ function ItemDetail(props) {
         <div className="product-card-detail">
             {props.loading ? <img className="mx-auto" width="32" height="32" src={loadingImg} alt="loading"/> :<div>
                 <div className="flex justify-center">
-                    <img src={`../${props.item.imageUrl}`} alt={props.item.name}/>
+                    <img src={props.item.imageUrl} alt={props.item.name}/>
                 </div>
                 <div className="product-card-info">
                     <div className="product-card-name">{props.item.name}</div>
