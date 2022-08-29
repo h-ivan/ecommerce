@@ -8,7 +8,7 @@ import loadingImg from '../../assets/img/loading.gif';
 function ItemDetail(props) {
 
     const [cartItems, setCartItems]  = useState(0);
-    const {addToCart} = useCart()
+    const {addToCart, cart} = useCart()
 
     function onAdd(qty) {
         setCartItems(qty);

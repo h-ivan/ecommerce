@@ -4,6 +4,8 @@ export const CartContext = createContext();
 
 export const CartProvider = (props) => {
     const [cart, setCart] = useState([]);
+    const [orderGenerated, setOrderGenerated] = useState(false);
+    const [orderMessage, setOrderMessage] = useState('');
 
     const addToCart = (item) => {
         if (cart.some((i) => i.id === item.id)) {
@@ -17,6 +19,7 @@ export const CartProvider = (props) => {
             setCart([...cart, item]);
         }
     };
+
 
     const removeFromCart = (item) => {
         setCart(cart.filter((i) => i.id !== item));
@@ -35,7 +38,7 @@ export const CartProvider = (props) => {
     }
 
     return (
-        <CartContext.Provider value={{cart, addToCart, emptyCart, removeFromCart, getTotalItems, getTotalPrice}}>
+        <CartContext.Provider value={{cart, addToCart, emptyCart, removeFromCart, getTotalItems, getTotalPrice, orderGenerated, orderMessage, setOrderGenerated, setOrderMessage}}>
             {props.children}
         </CartContext.Provider>
     );

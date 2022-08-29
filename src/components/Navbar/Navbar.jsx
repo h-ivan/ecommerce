@@ -7,7 +7,6 @@ import {useCart} from "../../context/CartContext.jsx";
 
 function Navbar() {
     const {cart} = useCart()
-    console.log(cart);
     return (
         <header className="header container">
             <NavLink className={({isActive}) =>
