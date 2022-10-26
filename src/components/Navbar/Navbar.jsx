@@ -19,7 +19,7 @@ function Navbar() {
             </NavLink>
             <NavLink className="brand-name" to={'/'}>
                 <h1>
-                    black & white
+                    black & white2
                 </h1>
             </NavLink>
             <NavLink className={({isActive}) =>
